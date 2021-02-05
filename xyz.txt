@@ -1,1 +1,4 @@
+<<<<<<< HEAD
 hi, want to check the cloning.
+=======
+conflict resolved
