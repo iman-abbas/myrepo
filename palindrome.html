@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style>h1{
+        text-align: center;
+    }
+    textarea{
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    button{
+        margin-left: 580px;
+        margin-top: 50px;
+    }</style>
+    <body>
+        <h1>Click on the button to enter values</h1>
+        <button onclick="myfun()">Click here</button>
+        <br>
+        <textarea name="" id="result" cols="30" rows="10"></textarea>
+        <script>
+            function reversestring(str){
+                var spliting = str.split("");
+                var reversing = spliting.reverse();
+                var joining = reversing.join("");
+                return joining
+            }
+            function myfun(){
+                var result  = document.getElementById("result")
+                var str1 = prompt("Enter the string");
+                var str2 = reversestring(str1);
+                var n  = str1.localeCompare(str2);
+                if (n == 0){
+                    result.value = "String is palindrome"
+                }
+                else{
+                    result.value = "Not a palindrome string"
+                }
+            }
+
+        </script>
+    </body>
+</html>
