@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report</title>
+    <style>
+        #main{
+            margin: auto ;
+            border: 1px black solid;
+            width: 600px;
+            height: 900px;
+        }
+        #heading{
+            background-color: gray;
+            width: 600px;
+            height: 80px;
+           
+        }
+        #body{
+            width: 500px;
+            height: 740px;
+            margin: auto;
+            
+        }
+        #footer{
+            width: 600px;
+            height: 80px;
+            background-color: lightgray;
+        }
+        h1{
+            margin: 0;
+            padding: 15px;
+            color: whitesmoke;
+        }
+        .ip{
+            display: block;
+            width: 500px;
+            height: 45px;
+            border-radius: 9px;
+            border: 3px solid lightgray;
+            
+        }
+        select{
+            width:500px;
+            background-color:#00af91;
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+        #nav{
+            display: flex;
+            border-bottom: 1px solid lightgray ;
+        }
+        #ttn{
+            margin-right: 69%;
+        }
+        .link{
+            color: #00af91;
+            padding: 8px;
+           
+        }
+        .button {
+            margin: 15px;
+            float: right;
+            background-color: #00af91;
+            border-radius: 7px;
+            padding: 15px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+}
+#choose{
+    margin: auto;
+    width: 500px;
+    height: 40px;
+    border: 1px solid lightgray;
+    
+
+    
+}
+
+
+input[type='file'] {
+  color: transparent;
+  direction: rtl;  
+  font-size: 25px;
+  color: lightgray;
+  border: 1px solid lightgray;
+  width: 500px;
+}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="ttn"><h1 style="color: #00af91;">TO THE NEW</h1></div>
+        <div class="link" ><span>Home</span></div>
+        <div class="link"><span>Quick Help</span></div>
+    </div>
+    <div id="main">
+        <div id="heading"><h1>Bug Report</h1></div>
+        <div id="body">
+            <form class="w3-container w3-card-4" action="/action_page.php">
+               
+                <p style="margin-top: 0; padding-top: 10px;">      
+                <label class="lb"><b>Title:*</b></label>
+                <input class="ip" name="title" type="text"></p>
+                <p>      
+                <label class="lb"><b>Description:*</b></label>
+                <textarea class="ip"></textarea></p>
+                <p>      
+                <p>
+                    <label class="lb"><b>Operating system:</b></label>
+                    
+                        <select class="ip">
+                          <option value="0">Windows xp</option>
+                          <option value="1">Window 7</option>
+                          <option value="2">window 8</option>
+                          <option value="3">window 10</option>
+                        </select>
+        
+                </p>
+                <p>
+                    <label class="lb"><b>Product</b></label>
+                    
+                        <select class="ip">
+                          <option value="0">Formoid</option>
+                          <option value="1">lamoade</option>
+                          <option value="2">kkkc</option>
+                          <option value="3">lllbc</option>
+                        </select>
+        
+                </p>
+                <p>      
+                    <label class="lb"><b>Version:*</b></label>
+                    <input class="ip" name="title" type="text" style="width: 25%;"></p>
+                    <p> 
+                <p>
+                    <label class="lb"><b>License</b></label>
+                </br>
+                    <input type="radio" name="free"> <label>Free</label>
+                    <input type="radio" name="Business"> <label>Business</label>
+                </p>
+                <p>
+                    <label class="lb"><b>Severity</b></label>
+                    
+                        <select class="ip">
+                          <option value="0">Critical</option>
+                          <option value="1">Non - critical</option>
+                          
+                        </select>
+        
+                </p>
+                <p>
+                    <label class="lb"><b>Attachments:</b></label>
+                    
+                        <div style="float: right;">
+                        <input type="file" style="margin:0px;" id="myfile" name="myfile">
+                    
+                    </div>
+                </p>
+              </form>
+        </div>
+        <div id="footer">
+            <button class="button">Send</button>
+        </div>
+    </div>
+    
+</body>
+</html>

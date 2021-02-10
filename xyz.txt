@@ -1,4 +1,3 @@
 <<<<<<< HEAD
-hi, want to check the cloning.
-=======
-conflict resolved
+<<<<<<< HEAD
+hi, want to c
