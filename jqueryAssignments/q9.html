@@ -1,0 +1,33 @@
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q8</title>
+	<style>
+  .test
+   { background-color:yellow;}
+</style>
+</head>
+<body>
+<p>Select food from the list.</p>
+
+<select>
+  <option value="">Select items</option>
+  <option value="Burger">Burger
+  <option value="Pizza">Pizza
+  <option value="Cheese Omlette">Cheese Omlette
+  <option value="Bread Butter">Bread Butter
+</select>
+
+<p>So you want to have <span><p id="ye"></p></span> </p>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#ye").append(this.value+" <br>")
+});
+});
+    </script>
+</body>
+</html>
