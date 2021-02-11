@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title>Q15</title>
+   <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        </head>
+   <body>
+
+ <div id="div1"><b>Hello and Welcome to jQuery</b></div>
+        <button type="button">Click Me!</button>
+
+<script>
+    $(document).ready(function()
+{
+
+        console.log("hello");
+
+        $("button").click(function()
+       {
+      
+            $.ajax({url:"load.txt",async:'true',dataType:'text',type:'GET',success:function(result) {
+                setTimeout(function(){
+                    console.log(result);
+                     $('#div1').append('</br>'+result);
+                },1000);
+                
+                        
+            },error:function(){
+                console.log("error")
+            }});
+            console.log("outside ajax");
+            
+        });
+    });
+    
+</script>
+</body>
+</html>
