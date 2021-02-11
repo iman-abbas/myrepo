@@ -1,0 +1,59 @@
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%" id="someTable">
+   <center><strong>Weekly Points Earned</strong><center>
+  <tr>
+    <th class="name">First Name</th>
+    <th class="lname">Last Name</th>
+    <th class="epoints">Points</th>
+  </tr>
+  <tr>
+    <td class="name">Akhil</td>
+    <td class="lname">Rawat</td>
+    <td class="epoints">15</td>
+  </tr>
+  <tr>
+    <td class="name">Nitin</td>
+    <td class="lname">Ranjan</td>
+    <td class="epoints">9</td>
+  </tr>
+   <tr>
+    <td class="name">Mahesh</td>
+    <td class="lname">Chand</td>
+    <td class="epoints">6</td>
+  </tr>
+<tr>
+    <td class="name">Sawtik</td>
+    <td class="lname">Ganguly</td>
+    <td class="epoints">18</td>
+  </tr>
+</table>
+<script>
+$(document).ready(function(){
+
+    $('.epoints').each(function(i, n) {
+   if($(n).text() > 10) 
+      $(n).css('color', 'green').css('background-color','yellow');
+});
+});
+</script>
+
+
+</body>
+</html>
