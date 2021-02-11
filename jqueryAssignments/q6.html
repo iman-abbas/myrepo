@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q6</title>
+	<style type="text/css">
+		div, p, button{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div>
+<p> this is a paragraph.</p>
+this text is directly inside the div tag.
+</div>
+<center>
+	<button id="b1">change all div tags with p tags </button>
+	<button id="b2">change all the p tags with div tags</button>
+</center>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#b1").click(function() {
+			/* Act on the event */
+			$("div").replaceWith($("<p>"+$("div").text()+"</p>"));
+		});
+		$("#b2").click(function() {
+			/* Act on the event */
+			$("p").replaceWith($("<div>" +$("p").text()+ "</div>"));
+		});
+	});
+</script>
+</body>
+</html>
