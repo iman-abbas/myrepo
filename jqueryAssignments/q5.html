@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 5</title>
+    <style type="text/css">
+    body{
+        text-align: center;
+    }
+        .target{
+            font-size: 100%;
+            
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                
+                $(".target").parent("#main").css('font-size', '200%');
+            });
+            
+        });
+    </script>
+</head>
+<body>
+<div id="main">
+    <p class="target"> this is a paragraph </p>
+</div>
+ 
+<div id="notMain">
+    <p class="target">this is another paragraph</p>
+</div>
+<button class="target">Click to change the font</button>
+</body>
+</html>
